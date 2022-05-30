@@ -8,7 +8,7 @@ public class Demo  {
 		System.out.println("Enter number of student objects to create");
 		int student_obj = sc.nextInt();
 		
-		for(int i=0;i<student_obj;i++) {
+		for(int i=1;i<=student_obj;i++) {
 			System.out.println("Enter Roll no :");
 			int roll = sc.nextInt();
 			System.out.println("Enter name :");
@@ -17,10 +17,15 @@ public class Demo  {
 			String address = sc.next();
 			System.out.println("Enter marks given :");
 			int marks = sc.nextInt();
-			sc.close();
-			student.showDetails();
-			
+			student.setRoll(roll);
+			student.setName(name);
+			student.setAddress(address);
+			student.setMarks(marks);	
 		}
+		student.showDetails();
+		
+		
+		sc.close();
 
 	}
 

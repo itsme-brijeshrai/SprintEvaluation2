@@ -5,6 +5,7 @@ public class Student {
 	private String name;
 	private String address;
 	private int marks;
+	private int averageMarks;
 	/**
 	 * 
 	 */
@@ -41,11 +42,21 @@ public class Student {
 	public void setMarks(int marks) {
 		this.marks = marks;
 	}
+	public int getAverageMarks() {
+		return averageMarks;
+	}
+	public void setAverageMarks(int averageMarks) {
+		
+		this.averageMarks = averageMarks;
+	}
 	
 	public void showDetails() {
+		System.out.println("======Student Details=========");
 		System.out.println("Roll no is :" + roll);
-		System.out.println("Name : " + roll);
+		System.out.println("Name : " + name);
 		System.out.println("Address : " + address);
 		System.out.println("Marks : " + marks);
+		System.out.println("Average marks is " + averageMarks);
 	}
+	
 }
